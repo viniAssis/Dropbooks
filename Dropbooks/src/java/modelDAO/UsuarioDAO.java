@@ -1,9 +1,7 @@
 package modelDAO;
 
 import model.Usuario;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class UsuarioDAO {
 
@@ -19,10 +17,8 @@ public class UsuarioDAO {
             ResultSet rs = ps.executeQuery();
             
             if(rs.next()){
-                usuario.setSexo(rs.getString("sexo").charAt(0));
+                usuario.setSexo(rs.getString("sexo"));
                 usuario.setDataNascimento(rs.getDate("dataNascimento"));
-                usuario.setId_endereco(rs.getInt("id_endereco"));
-                usuario.setId_conta(rs.getInt("id_conta"));
                 usuario.setId(rs.getInt("id"));
                 usuario.setTipoPessoa(rs.getInt("tipoPessoa"));
                 usuario.setComplemento(rs.getString("complemento"));

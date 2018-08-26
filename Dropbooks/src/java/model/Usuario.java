@@ -4,22 +4,21 @@ import java.sql.Date;
 
 public class Usuario {
 
-    private char sexo;
     private Date dataNascimento;
-    private int tipoPessoa,id_endereco, id_conta, id;
-    private String complemento, cpf_cnpj, nomeRazao, estado, telefone, email, numero, cidade, bairro, cep, logradouro, senha;
+    private int tipoPessoa, id;
+    private String sexo, complemento, cpf_cnpj, nomeRazao, estado, telefone, email, numero, cidade, bairro, cep, logradouro, senha;
 
     /**
      * @return the sexo
      */
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
     /**
      * @param sexo the sexo to set
      */
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
@@ -35,34 +34,6 @@ public class Usuario {
      */
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
-    }
-
-    /**
-     * @return the id_endereco
-     */
-    public int getId_endereco() {
-        return id_endereco;
-    }
-
-    /**
-     * @param id_endereco the id_endereco to set
-     */
-    public void setId_endereco(int id_endereco) {
-        this.id_endereco = id_endereco;
-    }
-
-    /**
-     * @return the id_conta
-     */
-    public int getId_conta() {
-        return id_conta;
-    }
-
-    /**
-     * @param id_conta the id_conta to set
-     */
-    public void setId_conta(int id_conta) {
-        this.id_conta = id_conta;
     }
 
     /**
