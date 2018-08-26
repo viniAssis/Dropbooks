@@ -2,6 +2,7 @@ package modelDAO;
 
 import model.Usuario;
 import java.sql.*;
+import java.util.List;
 
 public class UsuarioDAO {
 
@@ -46,5 +47,6 @@ public class UsuarioDAO {
         }
 
         return usuario;
+    }  
+        
     }
-}
