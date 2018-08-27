@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="formLogin col-md-8 ">
                     <p class="h3 text-center">Identifique-se</p>
-                    <form action="testandoOLogarServlet" method="get">
+                    <form action="Login" method="post">
                         <div class="form-group">
                             <label for="labelLogin">Email</label>
                             <input type="text" class="form-control" name="email" aria-describedby="email" placeholder="email@email.com">
