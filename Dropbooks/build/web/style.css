@@ -1,0 +1,54 @@
+* {
+    
+    margin: 0 auto;
+
+}
+a{
+    
+    font-style: italic;
+}
+fieldset {
+    border: 0;
+    
+}
+
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+input[type=text]{   
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+}
+ 
+z
+input[type=text]:hover, textarea:hover{ 
+         background: #ffffff; border:1px solid #990000;
+}
+ 
+input[type=submit]{
+        background:#006699;
+        color:#ffffff;
+}
+input[type=reset]{
+    background:#006699;
+        color:#ffffff;
+}
+
+div{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    width: 20%;
+    margin: 10;
+    float: left;
+  
+    text-align: inherit;
+    display: inline;
+}
