@@ -9,6 +9,7 @@
         <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        
         <script type="text/javascript" src="jquery-3.3.1.js">
     <script type="text/javascript">
             $(document).ready(function(){
@@ -54,12 +55,17 @@
                     <form action="Login" method="post">
                         <div class="form-group">
                             <label for="labelLogin">Email</label>
-                            <input type="text" class="form-control" name="email" aria-describedby="email" placeholder="email@email.com">
+                            <input type="text" class="form-control" name="email"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required="required" 
+                                   aria-describedby="email" placeholder="email@email.com"
+                              />
                         </div>
                         <div class="form-group">
                             <label for="labelSenha">Senha</label>
-                            <input type="password" class="form-control" name="senha" aria-describedby="senha" placeholder="*******">
-                            <small class="text-left novaSenha "><a href="#">Esqueceu sua senha?</a></small>
+                             <small class="text-left novaSenha "><a href="recupSenha.jsp">Esqueceu sua senha?</a></small>
+                            <input type="password" class="form-control" name="senha" required="required"
+                                   required aria-describedby="senha" placeholder="Digite sua senha">
+                           
                         </div>
                         <button type="submit" value="login" class="btn btn-primary btn-block">Enviar</button>
                     </form><hr>
